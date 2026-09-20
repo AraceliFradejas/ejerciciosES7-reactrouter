@@ -50,15 +50,15 @@ src/
 
 Página inicial con la ruta `Home` activa:
 
-![Página Home](docs/screenshots/home.png)
+![Página Home](docs/screenshots/home-completa.png)
 
 Ruta dinámica con el parámetro `Araceli` pintado en el `h1`:
 
-![Ruta con parámetro](docs/screenshots/parametro.png)
+![Ruta con parámetro](docs/screenshots/parametro-completa.png)
 
 Respuesta de la aplicación al visitar una ruta inexistente:
 
-![Página no encontrada](docs/screenshots/not-found.png)
+![Página no encontrada](docs/screenshots/not-found-completa.png)
 
 ## 6. Validación
 
