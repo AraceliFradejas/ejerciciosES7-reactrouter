@@ -12,7 +12,7 @@ Lo que más me ha costado entender ha sido la relación entre las rutas y los co
 
 - `Home`, `About` y `Contact` funcionan como componentes independientes.
 - `Header` contiene la navegación principal con `Link` y `NavLink`.
-- La ruta `/about/:name` recibe un parámetro y lo pinta en un `h1` con `useParams`.
+- La ruta `/contact/:title` recibe un parámetro y lo pinta en un `h1` con `useParams`.
 - `NotFound` muestra un mensaje sencillo cuando se visita una ruta que no está declarada.
 - Cada página tiene su propio estilo y cambia de color para que la navegación resulte fácil de comprobar.
 
@@ -26,6 +26,7 @@ src/
     Header/
       Header.jsx
       Header.css
+  pages/
     Home/
       Home.jsx
       Home.css
@@ -83,7 +84,7 @@ The part that took me the most thinking was understanding the relationship betwe
 
 - `Home`, `About` and `Contact` work as independent components.
 - `Header` contains the main navigation with `Link` and `NavLink`.
-- The `/about/:name` route receives a parameter and renders it in an `h1` with `useParams`.
+- The `/contact/:title` route receives a parameter and renders it in an `h1` with `useParams`.
 - `NotFound` displays a simple message when an undeclared route is visited.
 - Each page has its own styling and a different colour so the navigation is easy to check.
 
@@ -97,6 +98,7 @@ src/
     Header/
       Header.jsx
       Header.css
+  pages/
     Home/
       Home.jsx
       Home.css

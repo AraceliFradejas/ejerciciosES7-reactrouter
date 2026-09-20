@@ -16,7 +16,7 @@ function Header() {
       <nav className="main-nav" aria-label="Navegación principal">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/contact/contact">Contact</NavLink>
       </nav>
     </header>
   )

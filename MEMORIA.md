@@ -9,7 +9,7 @@ En esta práctica he trabajado la navegación básica en React usando `react-rou
 Según las capturas del enunciado:
 
 1. Crear un proyecto React e instalar `react-router-dom`.
-2. Crear tres componentes dentro de `src/components`.
+2. Crear tres componentes dentro de `src/pages`.
 3. Declarar una ruta para cada componente.
 4. Crear un componente `Header` con la navegación de la página.
 5. Enviar un parámetro en una de las rutas y utilizarlo en el componente para pintarlo en un `h1`.
@@ -21,7 +21,7 @@ Según las capturas del enunciado:
 - En `App.jsx` he declarado las rutas con `Routes` y `Route`.
 - He creado `Home`, `About` y `Contact` como componentes independientes.
 - `Header` utiliza `NavLink` para marcar la ruta activa y `Link` para volver al inicio. También tiene un botón para retroceder en el historial del navegador.
-- La ruta `/about/:name` utiliza `useParams` dentro de `About`. Cuando entro en `/about/Araceli`, el nombre recibido se pinta en el `h1` como `Hola, Araceli`.
+- La ruta `/contact/:title` utiliza `useParams` dentro de `Contact`. Cuando entro en `/contact/contact`, el valor recibido se pinta en el `h1` como `contact`.
 - La ruta comodín `*` carga `NotFound` y ofrece un enlace para volver al inicio.
 - He mantenido `InstruccionesEjercicio` fuera del repositorio mediante `.gitignore`, porque contiene las capturas del enunciado.
 
@@ -34,6 +34,7 @@ src/
   components/
     Header/Header.jsx
     Header/Header.css
+  pages/
     Home/Home.jsx
     Home/Home.css
     About/About.jsx
@@ -52,9 +53,9 @@ Página inicial con la ruta `Home` activa:
 
 ![Página Home](docs/screenshots/home-completa.png)
 
-Ruta dinámica con el parámetro `Araceli` pintado en el `h1`:
+Ruta dinámica con el parámetro `contact` pintado en el `h1`:
 
-![Ruta con parámetro](docs/screenshots/parametro-completa.png)
+![Ruta con parámetro](docs/screenshots/contacto-parametro-completa.png)
 
 Respuesta de la aplicación al visitar una ruta inexistente:
 
@@ -64,7 +65,7 @@ Respuesta de la aplicación al visitar una ruta inexistente:
 
 - `npm run build`: compila sin errores.
 - `npm run lint`: termina sin avisos.
-- Comprobación manual en navegador: funcionan Home, About, Contact, la ruta `/about/Araceli` y el componente `NotFound`.
+- Comprobación manual en navegador: funcionan Home, About, Contact, la ruta `/contact/contact` y el componente `NotFound`.
 - He revisado la apariencia en una ventana de escritorio y he mantenido los estilos en CSS plano para evitar problemas de compatibilidad con Safari.
 
 ## 7. Tecnologías
