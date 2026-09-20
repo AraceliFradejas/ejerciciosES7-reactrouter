@@ -87,6 +87,36 @@ The part that took me the most thinking was understanding the relationship betwe
 - `NotFound` displays a simple message when an undeclared route is visited.
 - Each page has its own styling and a different colour so the navigation is easy to check.
 
+### Structure
+
+```text
+src/
+  App.jsx
+  App.css
+  components/
+    Header/
+      Header.jsx
+      Header.css
+    Home/
+      Home.jsx
+      Home.css
+    About/
+      About.jsx
+      About.css
+    Contact/
+      Contact.jsx
+      Contact.css
+    NotFound/
+      NotFound.jsx
+      NotFound.css
+  main.jsx
+  index.css
+```
+
+### Technologies
+
+React 19, Vite and [React Router DOM](https://reactrouter.com/).
+
 ### Local setup
 
 ```bash
